@@ -16,6 +16,8 @@ func TestPostMeme(t *testing.T) {
 	if id == "" {
 		t.Error("Expected valid ID, got empty string")
 	}
+	t.Logf("PostMeme returned ID: %s", id)
+
 }
 
 func TestGetPostsInRangePagination(t *testing.T) {
